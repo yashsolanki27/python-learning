@@ -5,9 +5,9 @@ This repository contains my daily Python learning.
 ## Progress
 
 - [x] Variables
-- [ ] Data Types
-- [ ] Input Output
-- [ ] Operators
+- [x] Data Types
+- [x] Input Output
+- [x] Operators
 - [ ] Conditions
 - [ ] Loops
 - [ ] Functions
