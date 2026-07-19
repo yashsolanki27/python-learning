@@ -59,30 +59,38 @@ import math ;
 #Exercise 6 Calculator using if-elif
 
 
-operator = input("Select the Operator (+, -, *, /): ")
+# operator = input("Select the Operator (+, -, *, /): ")
 
-num1 = float(input("Enter your first Number: "))
-num2 = float(input("Enter your Second Number: "))
+# num1 = float(input("Enter your first Number: "))
+# num2 = float(input("Enter your Second Number: "))
 
-if operator == "+":
-    result = num1 + num2
-    print(f"Total sum is: {round(result, 3)}")
+# if operator == "+":
+#     result = num1 + num2
+#     print(f"Total sum is: {round(result, 3)}")
 
-elif operator == "-":
-    result = num1 - num2
-    print(f"Total difference is: {round(result, 3)}")
+# elif operator == "-":
+#     result = num1 - num2
+#     print(f"Total difference is: {round(result, 3)}")
 
-elif operator == "*":
-    result = num1 * num2
-    print(f"Total product is: {round(result, 3)}")
+# elif operator == "*":
+#     result = num1 * num2
+#     print(f"Total product is: {round(result, 3)}")
 
-elif operator == "/":
-    if num2 != 0:
-        result = num1 / num2
-        print(f"Total quotient is: {round(result, 3)}")
-    else:
-        print("Error: Division by zero is not allowed.")
+# elif operator == "/":
+#     if num2 != 0:
+#         result = num1 / num2
+#         print(f"Total quotient is: {round(result, 3)}")
+#     else:
+#         print("Error: Division by zero is not allowed.")
 
-else:
-    print("Invalid operator! Please choose +, -, *, or /.")
+# else:
+#     print("Invalid operator! Please choose +, -, *, or /.")
 
+
+#Ternary / conditional operator
+num = float(input("enter the number: "));
+
+
+result = "even" if num%2 == 0 else "odd";
+
+print(f"Number is {result}");
