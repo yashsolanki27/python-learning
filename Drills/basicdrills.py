@@ -142,8 +142,35 @@
 # print(f"Largest Number= {largest}")
 
 
-numbers = [12, 22, 56, 452, 654, 3256]
+# numbers = [12, 22, 56, 452, 654, 3256]
 
-smallest = min(numbers)
+# smallest = min(numbers)
 
-print(f"Smallest Number= {smallest}")
+# print(f"Smallest Number= {smallest}")
+
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 9]
+
+# smallest = nums[0]
+
+# for num in nums:
+#     if num < smallest:
+#         smallest = num
+# print(f"smallest is {smallest}")
+
+
+numbers = [10, 20, 30, 40, 50]
+
+target = int(input("Enter number to search: "))
+
+found = False
+
+for number in numbers:
+    if number == target:
+        found = True
+        break
+
+if found:
+    print(f"{target} was found in the list.")
+else:
+    print(f"{target} was not found in the list.")
