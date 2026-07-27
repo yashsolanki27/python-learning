@@ -1,0 +1,3 @@
+name: Ysash
+age: 217
+role: Py dedv

@@ -101,4 +101,4 @@ def deta(**kwargs):
         print(key, ":", value)
 
 
-deta(name="yash", age=27, work="AI Engineer", Identity="GOD")
+# deta(name="yash", age=27, work="AI Engineer", Identity="GOD")
