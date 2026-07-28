@@ -139,3 +139,17 @@ length = {name: len(name) for name in names}
 names = ["john", "alice"]
 
 result = {name: name.upper() for name in names}
+
+# List  - stores everything and fast to access
+# square = [n * n for n in numbers]
+# generator  - stores one value at a time and use less memory
+# square = (n * n for n in numbers)
+# unique  -- {value for item in iterable}  remove duplicates
+numbers = [1, 2, 2, 3, 3, 555, 555, 555, 555, 444, 444, 444, 444]
+unique = set()
+
+for n in numbers:
+    unique.add(n)
+
+unique = {n for n in numbers}
+print(unique)
