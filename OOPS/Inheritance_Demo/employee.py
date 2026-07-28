@@ -7,6 +7,9 @@ class Employee:
         self.name = name  # stores employees name inside the obj
         self.emp_id = emp_id  # stores employees unique id no. inside the obj
 
+    def __str__(self):
+        return f"Employee(Name={self.name}, ID={self.emp_id})"
+
     # common method available to all child classes
     def show_info(self):
         print("Name: ", self.name)
