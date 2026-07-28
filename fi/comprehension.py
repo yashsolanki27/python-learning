@@ -67,3 +67,37 @@ numbers = [2, 4, 6, 8]
 double = [n * 2 for n in numbers]
 
 print(double)
+
+
+# Convert strings to uppercase
+
+
+names = ["john", "alice", "bob"]
+
+upper_name = [name.upper() for name in names]
+
+# Get the length of each string
+
+names = ["John", "Alexander", "Tom"]
+lengths = [len(name) for name in names]
+
+
+# Remove extra spaces
+
+names = [" John ", " Alice ", " Bob "]
+
+stripp = [name.strip() for name in names]
+
+# Convert strings to integers
+
+numbers = ["1", "2", "3"]
+
+rs = [int(n) for n in numbers]
+
+
+# # Basic(Transform)
+# # Filter
+# # Conditional Transform
+
+# # if at the end → Filter (include or skip items).
+# #if...else before for → Transform (every item stays, but its value may change).
