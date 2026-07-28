@@ -5,3 +5,6 @@ lets move to the advance topics for more learning
 keep the stuff ready to serve no one knows when we got an offer
 for work in top level
 
+with open ("student.txt" , "w") as file:
+       file.write
+

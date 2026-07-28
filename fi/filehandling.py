@@ -6,6 +6,7 @@
 # with open("hat.txt", "r") as file:
 #     print(file.read())
 
+import pandas as py
 
 try:
     with open("students.txt", "x") as file:
@@ -33,3 +34,9 @@ with open("stud.txt", "r") as file:
 
 print("\nFile Content:")
 print(data)
+
+
+with open("hat.txt", "r") as file:
+    data = file.read
+    file.write
+    file.close
