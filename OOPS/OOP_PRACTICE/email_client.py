@@ -3,14 +3,18 @@ class EmailClient:
     def __init__(self, api_key):
         self.api_key = api_key
 
-    def send_email(self, email):
-        self.email = email
+    def send_email(self, email, subject, body):
+
         print(f"Using API KEY: {self.api_key}")
-        print(f"To: {self.email}")
-        print("Subject : Hello")
-        print("Body: How are you?")
+        print(f"To: {email}")
+        print(f"Subject: {subject}")
+        print(f"Body: {body}")
 
 
-email1 = EmailClient("asfnjhwtg76nksdhf3bkhjcsdnaUY34G254MGHABDTBU3Y327NUHknJb")
+email_client = EmailClient("asfnjhwtg76nk")
 
-email1.send_email("JAVSADASD123@gmail.com")
+email_client.send_email(
+    "JAVSADASD123@gmail.com",
+    "Motivation of death",
+    "Please die as soon as possible all of my negative energy",
+)
