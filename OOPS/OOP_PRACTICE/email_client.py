@@ -1,4 +1,4 @@
-class EmailCleint:
+class EmailClient:
 
     def __init__(self, api_key):
         self.api_key = api_key
@@ -11,6 +11,6 @@ class EmailCleint:
         print("Body: How are you?")
 
 
-email1 = EmailCleint("asfnjhwtg76nksdhf3bkhjcsdnaUY34G254MGHABDTBU3Y327NUHknJb")
+email1 = EmailClient("asfnjhwtg76nksdhf3bkhjcsdnaUY34G254MGHABDTBU3Y327NUHknJb")
 
 email1.send_email("JAVSADASD123@gmail.com")
