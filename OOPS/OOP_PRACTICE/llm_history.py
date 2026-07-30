@@ -85,5 +85,5 @@ client.show_stats()
 # Clear History
 client.clear_history()
 
-
+# Show History Again
 client.show_history()
