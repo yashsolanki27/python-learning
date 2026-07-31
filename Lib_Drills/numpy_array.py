@@ -93,3 +93,11 @@ print("Total Salary:", salary.sum())
 print("Average Salary:", salary.mean())
 print("Highest Salary:", salary.max())
 print("Lowest Salary:", salary.min())
+
+
+# size  - Returns the total number of elements in the array.
+
+arr = np.array([[10, 20, 30], [40, 50, 60]])
+
+
+print(arr.size)
