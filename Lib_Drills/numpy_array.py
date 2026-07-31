@@ -41,3 +41,32 @@ print(tea[1])
 arr2 = np.array([10, 20, 30, 40, 50, 60, 400])
 # means start at index 0 and stop before index 4
 arr2[1:4]
+
+
+# shape -- how data is organized means
+# how many dimensions your data has
+# and how many items exists in each dimension
+
+
+# python
+# arr.shape
+
+jira = np.array([100, 546, 4888, 23131, 46542118])
+
+print(jira.shape)
+
+# 4 elements
+# 1 dimension
+
+
+twor = np.array([[10, 20, 30], [40, 50, 60]])  # 3 elements
+# 2 dimension
+
+three_d_arr = np.array([[10, 20, 3, 30], [40, 232, 50, 60], [70, 3534, 80, 90]])
+# 4 elements
+# 3 dimension
+
+
+print(twor.shape)
+
+print(three_d_arr.shape)
