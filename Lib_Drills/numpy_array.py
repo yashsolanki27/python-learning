@@ -85,3 +85,11 @@ print(my_marks.mean())
 print(my_marks.max())
 # Min - Returns the smallest value.
 print(my_marks.min())
+
+
+salary = np.array([30000, 40000, 50000, 60000, 70000])
+
+print("Total Salary:", salary.sum())
+print("Average Salary:", salary.mean())
+print("Highest Salary:", salary.max())
+print("Lowest Salary:", salary.min())
