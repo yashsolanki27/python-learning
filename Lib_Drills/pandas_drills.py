@@ -1,21 +1,44 @@
 import pandas as pd
 
-# pandas stores it as a dataframe
+# # pandas stores it as a dataframe
 
-# Read CSV files   comma seprated value
-df = pd.read_csv("employees.csv")
+# # Read CSV files   comma seprated value
+# df = pd.read_csv("employees.csv")
 
-print(df)
+# print(df)
 
-# head()--->  Shows first 5 rows.
-print(df.head(2))
+# # head()--->  Shows first 5 rows.
+# print(df.head(2))
 
-# Shape  ---> tells (row and column)
-print(df.shape)
+# # Shape  ---> tells (row and column)
+# print(df.shape)
 
 
-# Select One Column  ---> df["column_name"]
+# # Select One Column  ---> df["column_name"]
 
-df = pd.read_csv("employees.csv")
+# df = pd.read_csv("employees.csv")
 
-print(df["Age"])
+# print(df["Age"])
+
+
+# # Filter Rows  --->> df[df["column"] > value]
+
+# high_salary = df[df["Salary"] >= 50000]
+
+# print(high_salary)
+
+
+# # group by
+
+data = {
+    "Name": ["Yash", "John", "Ram", "Amit"],
+    "Department": ["IT", "IT", "HR", "HR"],
+    "Salary": [50000, 60000, 40000, 50000],
+}
+
+
+emp_df = pd.DataFrame(data)
+
+
+print(emp_df.groupby("Department")["Salary"].mean())
+print(emp_df.groupby("Department")["Salary"].sum())
