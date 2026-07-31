@@ -70,3 +70,18 @@ three_d_arr = np.array([[10, 20, 3, 30], [40, 232, 50, 60], [70, 3534, 80, 90]])
 print(twor.shape)
 
 print(three_d_arr.shape)
+
+
+my_marks = np.array([80, 90, 70, 60, 100])
+
+# sum   --add values together
+
+print(my_marks.sum())
+
+# Mean   - Sum of values / Number of values
+print(my_marks.mean())
+
+# Max - returns the largest value
+print(my_marks.max())
+# Min - Returns the smallest value.
+print(my_marks.min())
