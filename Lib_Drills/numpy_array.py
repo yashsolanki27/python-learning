@@ -97,7 +97,15 @@ print("Lowest Salary:", salary.min())
 
 # size  - Returns the total number of elements in the array.
 
-arr = np.array([[10, 20, 30], [40, 50, 60]])
+arr5 = np.array([[10, 20, 30], [40, 50, 60]])
 
 
-print(arr.size)
+print(arr5.size)
+
+
+# type- Returns the data type of elements stored in the array.
+
+
+arr6 = np.array([10, 20, 30])
+
+print(arr6.dtype)
