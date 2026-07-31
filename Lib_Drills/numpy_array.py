@@ -1,5 +1,6 @@
 import numpy as np
 
+# NumPy = Python library used to work with numerical data using fast arrays and mathematical operations.
 # NumPy Arrays  → Fast numerical operations
 # creating an array
 arrs = np.array(
