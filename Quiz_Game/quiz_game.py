@@ -1,32 +1,26 @@
 print("Welcome to the Quiz Game!")
 
-score = 0
+questions = [
+    {"question": "What is the capital of France?", "answer": "paris"},
+    {"question": "What is 2 + 2?", "answer": "4"},
+    {"question": "What planet is known as the Red Planet?", "answer": "mars"},
+]
 
-# Question 1
-question1 = "What is the capital of France?"
-answer1 = input(f"Q1: {question1}\nYour answer: ")
-if answer1.lower() == "paris":
-    print("Correct!")
-    score += 1
-else:
-    print("Wrong! The answer is Paris.")
+def run_quiz():
+    score = 0
+    for i, q in enumerate(questions, 1):
+        answer = input(f"Q{i}: {q['question']}\nYour answer: ")
+        if answer.lower() == q["answer"]:
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Wrong! The answer is {q['answer'].title()}.")
+    print(f"\nGame Over! Your final score: {score}/{len(questions)}")
+    return score
 
-# Question 2
-question2 = "What is 2 + 2?"
-answer2 = input(f"Q2: {question2}\nYour answer: ")
-if answer2 == "4":
-    print("Correct!")
-    score += 1
-else:
-    print("Wrong! The answer is 4.")
-
-# Question 3
-question3 = "What planet is known as the Red Planet?"
-answer3 = input(f"Q3: {question3}\nYour answer: ")
-if answer3.lower() == "mars":
-    print("Correct!")
-    score += 1
-else:
-    print("Wrong! The answer is Mars.")
-
-print(f"\nGame Over! Your final score: {score}/3")
+while True:
+    run_quiz()
+    play_again = input("\nDo you want to play again? (yes/no): ")
+    if play_again.lower() != "yes":
+        print("Thanks for playing!")
+        break
