@@ -9,4 +9,14 @@ def display_board():
     print("---|---|---")
     print(f" {board[6]} | {board[7]} | {board[8]} \n")
 
+def player_move(player):
+    while True:
+        choice = input(f"Player {player}, enter position (1-9): ")
+        if choice in "123456789" and board[int(choice) - 1] not in ["X", "O"]:
+            board[int(choice) - 1] = player
+            break
+        print("Invalid move! Try again.")
+
+display_board()
+player_move("X")
 display_board()
