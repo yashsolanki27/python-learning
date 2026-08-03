@@ -28,13 +28,34 @@ def check_win():
             return True
     return False
 
-current_player = "X"
+def check_draw():
+    return all(cell in ["X", "O"] for cell in board)
+
+def reset_board():
+    global board
+    board = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+def play_game():
+    global board
+    reset_board()
+    current_player = "X"
+
+    while True:
+        display_board()
+        player_move(current_player)
+        if check_win():
+            display_board()
+            print(f"Player {current_player} wins!")
+            return current_player
+        if check_draw():
+            display_board()
+            print("It's a draw!")
+            return None
+        current_player = "O" if current_player == "X" else "X"
 
 while True:
-    display_board()
-    player_move(current_player)
-    if check_win():
-        display_board()
-        print(f"Player {current_player} wins!")
+    winner = play_game()
+    play_again = input("\nDo you want to play again? (yes/no): ")
+    if play_again.lower() != "yes":
+        print("Thanks for playing!")
         break
-    current_player = "O" if current_player == "X" else "X"
