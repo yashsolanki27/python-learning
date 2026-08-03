@@ -28,6 +28,13 @@ def check_win():
             return True
     return False
 
-display_board()
-player_move("X")
-display_board()
+current_player = "X"
+
+while True:
+    display_board()
+    player_move(current_player)
+    if check_win():
+        display_board()
+        print(f"Player {current_player} wins!")
+        break
+    current_player = "O" if current_player == "X" else "X"
